@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Piotr\\Desktop\\Wariant 1\\WebAPI\\WebAPI\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Student RM4-3073 10\\Documents\\GitHub\\zadanie-4-wariat-3-Kafa-Kun-K\\WebAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|c:\\users\\student rm4-3073 10\\documents\\github\\zadanie-4-wariat-3-kafa-kun-k\\webapi\\webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,6 +59,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:4:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Student RM4-3073 10\\Documents\\GitHub\\zadanie-4-wariat-3-Kafa-Kun-K\\WebAPI\\WebAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Student RM4-3073 10\\Documents\\GitHub\\zadanie-4-wariat-3-Kafa-Kun-K\\WebAPI\\WebAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-02T10:33:06.269Z",
+              "EditorCaption": ""
             }
           ]
         },
