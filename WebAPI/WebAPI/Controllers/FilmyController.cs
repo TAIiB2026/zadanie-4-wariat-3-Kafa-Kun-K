@@ -6,6 +6,17 @@ namespace WebAPI.Controllers
     [Route("api/[controller]")]
     public class FilmyController : ControllerBase
     {
+        public class Film
+        {
+            public int Id { get; set; }
+            public string Tytul { get; set; }
+            public decimal Cena { get; set; }
+            public DateTime DataPremiery { get; set; }
+
+            public string Nazwa { set { Tytul = value; } }
+            public DateTime Data { set { DataPremiery = value; } }
+        }
+
         private static List<Film> _bazaDanych = new List<Film>
         {
             new Film { Id = 1, Tytul = "Film 1", Cena = 10, DataPremiery = new DateTime(2003, 8, 14) },
@@ -23,22 +34,22 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add([FromBody] FormularzDto dto)
+        public IActionResult Add([FromBody] Film film)
         {
-            int newId = _bazaDanych.Any() ? _bazaDanych.Max(x => x.Id) + 1 : 1;
-            _bazaDanych.Add(new Film { Id = newId, Tytul = dto.Nazwa, Cena = dto.Cena, DataPremiery = dto.Data });
+            film.Id = _bazaDanych.Any() ? _bazaDanych.Max(x => x.Id) + 1 : 1;
+            _bazaDanych.Add(film);
             return Ok(true);
         }
 
         [HttpPut("{id}")]
-        public IActionResult Edit(int id, [FromBody] FormularzDto dto)
+        public IActionResult Edit(int id, [FromBody] Film film)
         {
             var item = _bazaDanych.FirstOrDefault(x => x.Id == id);
             if (item == null) return NotFound();
 
-            item.Tytul = dto.Nazwa;
-            item.Cena = dto.Cena;
-            item.DataPremiery = dto.Data;
+            item.Tytul = film.Tytul;
+            item.Cena = film.Cena;
+            item.DataPremiery = film.DataPremiery;
             return Ok(true);
         }
 
@@ -51,20 +62,5 @@ namespace WebAPI.Controllers
             _bazaDanych.Remove(item);
             return Ok(true);
         }
-    }
-
-    public class Film
-    {
-        public int Id { get; set; }
-        public string Tytul { get; set; }
-        public decimal Cena { get; set; }
-        public DateTime DataPremiery { get; set; }
-    }
-
-    public class FormularzDto
-    {
-        public string Nazwa { get; set; }
-        public decimal Cena { get; set; }
-        public DateTime Data { get; set; }
     }
 }
