@@ -41,6 +41,16 @@ namespace WebAPI.Controllers
             item.DataPremiery = dto.Data;
             return Ok(true);
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var item = _bazaDanych.FirstOrDefault(x => x.Id == id);
+            if (item == null) return NotFound();
+
+            _bazaDanych.Remove(item);
+            return Ok(true);
+        }
     }
 
     public class Film

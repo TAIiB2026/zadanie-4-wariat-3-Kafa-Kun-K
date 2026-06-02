@@ -15,6 +15,10 @@ export class RepozytoriumPamiecioweService implements GetDataInterface, FormSubm
     new FilmClass(this.idGenerator++, "Jak wytresować smoka", 16.50, new Date(2010, 2, 26))
   ]
 
+  Delete(id: number): Observable<any> {
+    return of(true); 
+  }
+
   Post(nazwa: string, cena: number, data: Date): Observable<boolean> {
     const newObj = new FilmClass(this.idGenerator++, nazwa, cena, data);
     this.data.push(newObj);

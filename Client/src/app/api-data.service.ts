@@ -21,4 +21,8 @@ export class ApiDataService implements GetDataInterface {
       map(item => ({ ...item, dataPremiery: new Date(item.dataPremiery || item.DataPremiery) }))
     );
   }
+
+  Delete(id: number): Observable<any> {
+    return this.http.delete(`${this.apiUrl}/${id}`);
+  }
 }
