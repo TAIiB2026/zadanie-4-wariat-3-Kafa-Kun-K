@@ -15,7 +15,6 @@
             <td>{{d.cena | currency:'PLN'}}</td>
             <td>{{d.dataPremiery | date:"shortDate"}}</td>
             <td><a [routerLink]="d.id + ''">Przejdź do edycji</a></td>
-            <td><button (click)="usunRekord(d.id)">Usuń</button></td>
         </tr>
     </tbody>
 </table>
