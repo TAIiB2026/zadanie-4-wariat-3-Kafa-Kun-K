@@ -11,7 +11,8 @@ import { GET_DATA_TOKEN } from './tokens/get-data.token';
 import localePl from '@angular/common/locales/pl';
 import { registerLocaleData } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { ApiDataService } from './filmy/api-data.service';
+import { ApiDataService } from './api-data.service';
+import { ApiFormSubmitService } from './api-form-submit.service';
 
 registerLocaleData(localePl);
 
@@ -33,7 +34,7 @@ registerLocaleData(localePl);
       provide: GET_DATA_TOKEN, useExisting: ApiDataService,
     }, 
     {
-      provide: FORM_SUBMIT_TOKEN, useExisting: RepozytoriumPamiecioweService
+      provide: FORM_SUBMIT_TOKEN, useExisting: ApiFormSubmitService
     },
     { 
       provide: LOCALE_ID, useValue: 'pl-PL' 

@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Student RM4-3073 10\\Documents\\GitHub\\zadanie-4-wariat-3-Kafa-Kun-K\\WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|c:\\users\\student rm4-3073 10\\documents\\github\\zadanie-4-wariat-3-kafa-kun-k\\webapi\\webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|c:\\users\\student rm4-3073 10\\documents\\github\\zadanie-4-wariat-3-kafa-kun-k\\webapi\\webapi\\controllers\\filmycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8F3A1C-89E2-4204-BDA7-2F242468D42F}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\filmycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -63,14 +63,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Student RM4-3073 10\\Documents\\GitHub\\zadanie-4-wariat-3-Kafa-Kun-K\\WebAPI\\WebAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "WebAPI\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Student RM4-3073 10\\Documents\\GitHub\\zadanie-4-wariat-3-Kafa-Kun-K\\WebAPI\\WebAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "WebAPI\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-02T10:33:06.269Z",
+              "Title": "FilmyController.cs",
+              "DocumentMoniker": "C:\\Users\\Student RM4-3073 10\\Documents\\GitHub\\zadanie-4-wariat-3-Kafa-Kun-K\\WebAPI\\WebAPI\\Controllers\\FilmyController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\FilmyController.cs",
+              "ToolTip": "C:\\Users\\Student RM4-3073 10\\Documents\\GitHub\\zadanie-4-wariat-3-Kafa-Kun-K\\WebAPI\\WebAPI\\Controllers\\FilmyController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\FilmyController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAwFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T10:57:50.666Z",
               "EditorCaption": ""
             }
           ]
