@@ -8,17 +8,17 @@ import { Observable } from "rxjs";
     providedIn: 'root'
 })
 export class ApiFormSubmitService implements FormSubmitInterface {
-    private apiUl = "http://localhost:5110/api/filmy";
+    private apiUrl = "http://localhost:5110/api/filmy";
 
     constructor(private http: HttpClient) {}
 
     Post(nazwa: string, cena: number, data: Date): Observable<any> {
         const payload = { nazwa, cena, data };
-        return this.http.post<boolean>(this.apiUl, payload);
+        return this.http.post<boolean>(this.apiUrl, payload);
     }
 
     Put(id: number, nazwa: string, cena: number, data: Date): Observable<any> {
         const payload = { id, nazwa, cena, data };
-        return this.http.put<boolean>(`${this.apiUl}/${id}`, payload);
+        return this.http.put<boolean>(`${this.apiUrl}/${id}`, payload);
     }
 }
